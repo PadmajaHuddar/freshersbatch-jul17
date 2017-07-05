@@ -3,3 +3,4 @@ It has 3 subsections.
 First is HTML section.
 Second is CSS section.
 Third is Java Script section.
+Half way done through first section.
