@@ -1,4 +1,4 @@
-Assignment number 2 for GIT. Currently working on the second sub-section.
+Assignment number 2 for GIT. Currently working on the second sub-section in the master branch.
 It has 3 subsections.
 Done with First section which is HTML section.
 Second is CSS section.
