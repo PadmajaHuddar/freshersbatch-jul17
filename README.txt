@@ -1,4 +1,4 @@
-This is assignment number 2 for GIT.
+Assignment number 2 for GIT. Currently working on the second sub-section.
 It has 3 subsections.
 First is HTML section.
 Second is CSS section.
