@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post your Ad!!</title>
+	<link rel="stylesheet" href="card.css">
+	<link rel="stylesheet" href="w3.css">	<link rel="stylesheet" href="main.css">
+
+	<link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'>
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<script>
+		body{
+			font-family= "MedievalSharp", sans-serif;
+		}
+	</script>
+</head>
+<body>
+<form class="w3-container w3-card-4 w3-light-grey w3-vivid-purplish-red w3-margin">
+	<h2 class="w3-center w3-vivid-purplish-red">Post Ad</h2>
+	
+	<div class="col-md-12 col-sm-12">
+	<h3>Information about locality</h3>
+	
+	<div class="form-group col-md-6 col-sm-6">
+            <label for="name">Name of Locality:*	</label>
+            <input type="text" class="form-control input-sm" id="name" placeholder="">
+        </div>
+	
+	<div class="form-group col-md-6 col-sm-6">
+            <label for="name">Landmark:	</label>
+            <input type="text" class="form-control input-sm" id="name" placeholder="">
+        </div>
+		
+	<div class="form-group col-md-6 col-sm-6">
+	      <label for="address">Address:*</label>
+	      <textarea class="form-control input-sm" id="address" rows="3"></textarea>
+	   </div>
+	
+	<div class="form-group col-md-6 col-sm-6">
+            <label for="city">City:*</label>
+            <input type="text" class="form-control input-sm" id="city" placeholder="">
+        </div>
+		
+	<div class="form-group col-md-6 col-sm-6">
+            <label for="city">Rent:*</label>
+            <input type="text" class="form-control input-sm" id="city" placeholder="">
+        </div>
+		
+		
+	<h3>Information about add poster</h3>
+	<div class = "form-group col-md-6 col-sm-6">
+	    <select class="form-control input-sm" id="bhk">
+		<option>--Posted by--</option>
+		<option>Owner</option>
+		<option>Broker</option>
+		<option>Builder</option>
+		</select>
+	</div>
+	<div class="form-group col-md-6 col-sm-6">
+            <label for="city">Add posted by(Name):*</label>
+            <input type="text" class="form-control input-sm" id="city" placeholder="">
+        </div>
+	
+        <div class="form-group col-md-6 col-sm-6">
+            <label for="email">Email*</label>
+            <input type="email" class="form-control input-sm" id="email" placeholder="">
+        </div>
+
+        <div class="form-group col-md-6 col-sm-6">
+            <label for="mobile">Mobile*</label>
+            <input type="text" class="form-control input-sm" id="mobile" placeholder="">
+        </div>
+
+	<h3>Information about flat</h3>
+	<div class = "form-group col-md-6 col-sm-6">
+	    <select class="form-control input-sm" id="type">
+		<option>--Type of flat--</option>
+		<option>Bunglow</option>
+		<option>Apartment</option>
+		<option>Duplex</option>
+		<option>Plot</option>
+		</select>
+	</div>
+	<div class = "form-group col-md-6 col-sm-6">
+	    <select class="form-control input-sm" id="bhk">
+		<option>--No of BHK--</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		</select>
+	</div>
+	
+	
+	<div class = "form-group col-md-6 col-sm-6">
+	    <select class="form-control input-sm" id="furnished">
+		<option>--Furnished status--</option>
+		<option>Unfurnished</option>
+		<option>Semi-furnished</option>
+		<option>Fully-furnished</option>
+		</select>
+	</div>
+	
+	<div class = "form-group col-md-6 col-sm-6">      
+	    <select class="form-control input-sm" id="tenants">
+		<option>--Preferred Tenants--</option>
+		<option>Family</option>
+		<option>Bachelor Women</option>
+		<option>Bachelor Men</option>
+		<option>Any</option>
+		</select>
+	</div>
+	
+	<div class = "form-group col-md-6 col-sm-6">  
+	Upload photos:
+	<form action="/action_page.php">
+	<input type="file" name="pic" accept="image/*">
+	<input type="submit">
+	</form>
+	</div>
+</div>
+	<p class="w3-center">
+	<a class="button" id="button1" role="button" href="afterlogin.html">Post</a></button>
+	</p>
+	
+</form>
+</body>
+</html>

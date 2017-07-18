@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<title>Maison Me- Real Estate Site </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'>
+      <link rel="stylesheet" href="card.css">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<body>
+	<div class="w3-bar w3-vivid-purplish-red w3-border w3-padding">
+		<a href="#" class="w3-bar-item w3-button w3-mobile"><i class="fa fa-home"></i></a>
+	
+		<div class="w3-dropdown-hover">
+			<button class="w3-button">Buy</button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="#" class="w3-bar-item w3-button">1BHK</a>
+					<a href="#" class="w3-bar-item w3-button">2BHK</a>
+					<a href="#" class="w3-bar-item w3-button">3BHK</a>
+				</div>
+		</div>
+	
+		<div class="w3-dropdown-hover">
+			<button class="w3-button">Rent</button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="#" class="w3-bar-item w3-button">1BHK</a>
+					<a href="#" class="w3-bar-item w3-button">2BHK</a>
+					<a href="#" class="w3-bar-item w3-button">3BHK</a>
+				</div>
+		</div>
+		
+	
+		<a class="w3-bar-item w3-button w3-mobile" href="postad.html">Sell</a></button>
+
+
+		<input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search..">
+		<a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+ 
+    	<a class="w3-bar-item w3-button w3-mobile" href="postad.html">Post Ad</a></button>
+
+	  	<a href="main.html" class="w3-bar-item w3-button w3-mobile">Logout</a>
+
+	  
+
+<div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left align-left" style="display:none;left:0;color:white;background-color:#ff8080" id="leftMenu">
+  <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large" style="background-color:#8c8c8c;">Filter &times;</button>
+  <div id="menu">
+<div class="panel list-group">
+ <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sm" data-parent="#menu">Number of Rooms<span class="glyphicon glyphicon-home pull-right"></span></a>
+ <div id="sm" class="sublinks collapse">
+  <form action="/action_page.php" style="color:#ff8080">
+  <input type="checkbox" name="flat" value="1BHK">1BHK<br>
+  <input type="checkbox" name="flat" value="2BHK" checked>2BHK<br>
+  <input type="checkbox" name="flat" value="3BHK">3BHK<br>
+  <input type="submit" value="Submit">
+</form> </div>
+ <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sl" data-parent="#menu">Location      <span class="glyphicon glyphicon-map-marker"></span></a>
+ <div id="sl" class="sublinks collapse">
+  <form action="/action_page.php" style="color:#ff8080">
+  <input type="checkbox" name="flat" value="Baner">Baner Road<br>
+  <input type="checkbox" name="flat" value="Balewadi">Balewadi<br>
+  <input type="checkbox" name="flat" value="Wakad">Wakad<br>
+    <input type="checkbox" name="flat" value="Hinjewadi">Hinjewadi<br>
+  <input type="submit" value="Submit">
+</form>  </div>
+ <a href="#" class="list-group-item" data-toggle="collapse" data-target="#st" data-parent="#menu">Posted by      <span class="glyphicon glyphicon-user"></span></a>
+ <div id="st" class="sublinks collapse">
+  <form action="/action_page.php" style="color:#ff8080">
+  <input type="checkbox" name="flat" value="Owner">Owner<br>
+  <input type="checkbox" name="flat" value="Broker">Broker<br>
+  <input type="checkbox" name="flat" value="Builder">Builder<br>
+  <input type="submit" value="Submit">
+</form>  </div>
+</div>
+</div>
+</div>
+
+<div class="w3-vivid-purplish-red">
+  <button class="w3-button w3-vivid-purplish-red w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
+  <!--button class="w3-button w3-vivid-purplish-red w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button-->
+  
+     </div>
+	 </div>
+	 
+	 <div class="card">
+    <div class="left"><img src="1.jpg" ></div>
+  <div class="container">
+    <h1><a href="view.html" class="a1">2BHK Flat for Rent in Baner</a></h1>
+    <p class="title w3-light-grey">Arihant Residency</p>
+   <i class="fa fa-inr"></i>15,000
+
+   <div id="container">
+<a class="button" id="button1" role="button" href="view.html">View</a></button>
+        <button type="button" class="w3-mobile button" data-toggle="modal" data-target="#contact">Contact</button>
+		<div class="modal fade" id="contact" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Contact</h4>
+        </div>
+        <div class="modal-body">
+
+			<div class = "form-group col-md-6 col-sm-6">
+	    <label for="city">Posted by: Owner</label>
+    </div>
+
+	<div class="form-group col-md-6 col-sm-6">
+        <label for="city">Add posted by(Name): Rinku Singh</label>
+    </div>
+	
+    <div class="form-group col-md-6 col-sm-6">
+        <label for="email">Email: rinku2309@gmail.com</label>
+    </div>
+
+    <div class="form-group col-md-6 col-sm-6">
+        <label for="mobile">Mobile: 8895412360</label>
+    </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+		
+   </div>
+   </div>
+   </div>
+	</div>
+  </div>
+  </div>
+<div class="card">
+    <div class="left"><img src="2.jpg" ></div>
+  <div class="container">
+    <h1><a href="view.html" class="a1">2BHK Flat for Rent near Baner-Balewadi road</a></h1>
+    <p class="title w3-light-grey">Om Residency</p>
+   <i class="fa fa-inr"></i>20,000
+  
+   <div id="container">
+    <a class="button" id="button1" role="button" href="view.html">View</a></button>
+    <button type="button" class="w3-mobile button" data-toggle="modal" data-target="#contact">Contact</button>
+		<div class="modal fade" id="contact" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Contact</h4>
+        </div>
+        <div class="modal-body">
+
+			<div class = "form-group col-md-6 col-sm-6">
+	    <label for="city">Posted by: Owner</label>
+    </div>
+
+	<div class="form-group col-md-6 col-sm-6">
+        <label for="city">Add posted by(Name): Rinku Singh</label>
+    </div>
+	
+    <div class="form-group col-md-6 col-sm-6">
+        <label for="email">Email: rinku2309@gmail.com</label>
+    </div>
+
+    <div class="form-group col-md-6 col-sm-6">
+        <label for="mobile">Mobile: 8895412360</label>
+    </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+		
+   </div>
+   </div>
+   </div>
+	</div>
+  </div>
+  </div>
+<div class="card">
+    <div class="left"><img src="3.jpg" ></div>
+  <div class="container">
+    <h1><a href="view.html" class="a1">3BHK Flat for Rent in Baner</a></h1>
+    <p class="title w3-light-grey">Aditi Samruddhi</p>
+   <i class="fa fa-inr"></i>25,000
+   
+
+   <div id="container">
+   <a class="button" id="button1" role="button" href="view.html">View</a></button>
+    <button type="button" class="w3-mobile button" data-toggle="modal" data-target="#contact">Contact</button>
+		<div class="modal fade" id="contact" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Contact</h4>
+        </div>
+        <div class="modal-body">
+
+			<div class = "form-group col-md-6 col-sm-6">
+	    <label for="city">Posted by: Owner</label>
+    </div>
+
+	<div class="form-group col-md-6 col-sm-6">
+        <label for="city">Add posted by(Name): Rinku Singh</label>
+    </div>
+	
+    <div class="form-group col-md-6 col-sm-6">
+        <label for="email">Email: rinku2309@gmail.com</label>
+    </div>
+
+    <div class="form-group col-md-6 col-sm-6">
+        <label for="mobile">Mobile: 8895412360</label>
+    </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+		
+   </div>
+   </div>
+   </div>
+	</div>
+  </div>
+  </div>
+<div class="card">
+    <div class="left"><img src="4.jpg" ></div>
+  <div class="container">
+    <h1><a href="view.html" class="a1">1BHK Flat for Rent in Wakad</a></h1>
+    <p class="title w3-light-grey">Suyash</p>
+   <i class="fa fa-inr"></i>12,000
+   <div id="container">
+    <a class="button" id="button1" role="button" href="view.html">View</a></button>
+    <button type="button" class="w3-mobile button" data-toggle="modal" data-target="#contact">Contact</button>
+		<div class="modal fade" id="contact" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Contact</h4>
+        </div>
+        <div class="modal-body">
+
+			<div class = "form-group col-md-6 col-sm-6">
+	    <label for="city">Posted by: Owner</label>
+    </div>
+
+	<div class="form-group col-md-6 col-sm-6">
+        <label for="city">Add posted by(Name): Rinku Singh</label>
+    </div>
+	
+    <div class="form-group col-md-6 col-sm-6">
+        <label for="email">Email: rinku2309@gmail.com</label>
+    </div>
+
+    <div class="form-group col-md-6 col-sm-6">
+        <label for="mobile">Mobile: 8895412360</label>
+    </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+		
+   </div>
+   </div>
+   </div>
+	</div>
+  </div>
+  </div>
+
+	 <footer class="container-fluid bg-4">
+	 <div class="container-fluid">
+  <div class="col-sm-4">
+	<ul>
+    <li><a href="#" class="a1">Top Developers</a></li>
+    <li><a href="#" class="a1">Real Estate News</a></li>
+    <li><a href="#" class="a1">Give us your feedback</a></li>
+    <li>Need any help? Write to us at</li>
+	<li><i class="fa fa-envelope-o">support@maisonme.com</i>
+    
+	</ul>
+	</div>
+  <div class="col-sm-4"><div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-google w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <div>
+  <p>© 2017 Padmaja Huddar. All rights reserved.</p></div>
+  </div>
+  <div class="col-sm-4">
+  <ul>
+    <li><a href="#" class="a1">Home Loans</a></li>
+    <li><a href="#" class="a1">Download App</a></li>
+    </ul>
+  </div>
+</div>
+ 
+</footer>
+
+<script>
+function openLeftMenu() {
+    document.getElementById("leftMenu").style.display = "block";
+}
+function closeLeftMenu() {
+    document.getElementById("leftMenu").style.display = "none";
+}
+
+/*function openRightMenu() {
+    document.getElementById("rightMenu").style.display = "block";
+}
+function closeRightMenu() {
+    document.getElementById("rightMenu").style.display = "none";
+}*/
+</script>
+
+</body>
+</html>
